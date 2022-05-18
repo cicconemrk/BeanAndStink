@@ -24,35 +24,65 @@ h4{
 text-align: center;
 }
 
-.padded img { 
-    padding-left: 10em; 
-    padding-right: 10em; 
-  } 
-  
-button {   
-        background-color: #b3dca0;   
-        color: black;   
-        padding: 15px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;   
+.padded img {
+    padding-left: 10em;
+    padding-right: 10em;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .img-wrap {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  div > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+        background-color: #b3dca0;
+        color: black;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
          }
-    
+
 	.getstarted {
-	    width: auto;   
-        padding: 10px 18px;  
+	    width: auto;
+        padding: 10px 18px;
         margin: 10px 150px;
 		height: 50px;
 	}
 	.footbutton {
-	    width: auto;   
-        padding: 10px 18px;  
+	    width: auto;
+        padding: 10px 18px;
         margin: 10px 5px;
 	}
+  .ldr {
+    width: 150px;
+    height: 100px;
+  }
+
+a.letsrock {
+  font-size: 30;
+}
 customIndent{
   margin-left: 5em;
 }
-	
+
 header {
 left: 0;
 padding: 0 4%;
@@ -83,9 +113,9 @@ background-color:white;
 </style>
 
 <title>Welcome to Bean And Stink!</title>
-	
+
 <link rel="icon" href="https://imgur.com/wZtsrKZ.png">
-	
+
 </head>
 
 <body>
@@ -101,33 +131,50 @@ background-color:white;
          width="350" height="113">
   </a>
   </inline>
- 
+
 </header>
 
 <div id="mainDiv">
-    <center>
+  <h1><b><u>NEW ADDITION!!!! NEW ADDITION!!!! NEW ADDITION!!!!</b></u></h1>
+  <h1><b><u>NEW ADDITION!!!! NEW ADDITION!!!! NEW ADDITION!!!!</b></u></h1>
+  <h1><b><u>NEW ADDITION!!!! NEW ADDITION!!!! NEW ADDITION!!!!</b></u></h1>
+  <center>
+    <img class="padded" alt="this grill is not a home" src="https://imgur.com/dut8XJc.png"
+         width="719" height="448" style="vertical-align:middle;margin:0px 50px">
+    <h2>Introducing "<b><u>Bean and Stink's Fun n' Games From Afar</u></b>"!!!!!</h2>
+    <h2>Click the button below for countless hours of long distance fun!!</h2>
     <inline>
-  	  <img alt="greenhouse pic" src="https://imgur.com/Qtdmfb4.png"
-           width="300" height="400" style="vertical-align:middle;margin:0px 50px">
-	  <img alt="chef perc" src="https://imgur.com/EYo5hNV.png"
-           width="300" height="400" style="vertical-align:middle;margin:0px 50px">
-      <img alt="party bathroom" src="https://imgur.com/f8n9ZGy.png"
-           width="300" height="400" style="vertical-align:middle;margin:0px 50px">
+      <img alt="really cool flames trust me" src="https://imgur.com/lfZ93FD.gif"
+           width="100" height="100" style="vertical-align:middle;margin:0px 50px">
+      <button type="button" class="ldr" onclick="location.href = '/long-distance';"> <a class="letsrock"><b>LET'S ROCK</b></a></button>
+      <img alt="really cool flames trust me" src="https://imgur.com/lfZ93FD.gif"
+           width="100" height="100" style="vertical-align:middle;margin:0px 50px">
     </inline>
+  </center>
+  <br><br><br>
+  <h1> Welcome to the hub for all things Bean & Stink! </h1>
+
+  <h4>Just select which of the occasions you'd like to plan for, and away you go!</h4>
+  <h4>More to be added soon! I love you!!</h4>
+    <center>
+
+  	  <img class="img-wrap" alt="greenhouse pic" src="https://imgur.com/Qtdmfb4.png"
+           width="300" height="400" style="vertical-align:middle;margin:0px 50px">
+	  <img class="img-wrap" alt="chef perc" src="https://imgur.com/EYo5hNV.png"
+           width="300" height="400" style="vertical-align:middle;margin:0px 50px">
+      <img class="img-wrap" alt="party bathroom" src="https://imgur.com/f8n9ZGy.png"
+           width="300" height="400" style="vertical-align:middle;margin:0px 50px">
+
     </center>
     <br>
     <center>
 	<inline>
-    <button type="button" class="getstarted" onclick="location.href = '/dates-day';"> Daytime Date</button>
+  <button type="button" class="getstarted" onclick="location.href = '/dates-day';"> Daytime Date</button>
 	<button type="button" class="getstarted" onclick="location.href = '/dates-night-in';"> Nighttime Date<br>(Staying In)</button>
 	<button type="button" class="getstarted" onclick="location.href = '/dates-night-out';"> Nighttime Date<br>(Going Out)</button>
 	</inline>
     </center>
-	<h1> Welcome to the hub for all things Bean & Stink! </h1>
 
-	<h4>Just select which of the occasions you'd like to plan for, and away you go!</h4>
-	<h4>More to be added soon! I love you!!</h4>
-	
  <br>
 </div>
 
@@ -136,7 +183,7 @@ background-color:white;
 <inline>
   <h2>An OrcPiss.com Production</h2>
   <button type="button" class="footbutton" align="left" onclick="location.href = 'https://twitter.com/CanIDrinkUrPee';"> FAQ</button>
-  <button type="button" class="footbutton" align="left" onclick="location.href = 'https://twitter.com/CanIDrinkUrPee';"> Contact Us</button> 
+  <button type="button" class="footbutton" align="left" onclick="location.href = 'https://twitter.com/CanIDrinkUrPee';"> Contact Us</button>
   </inline>
 <br>
 </footer>
