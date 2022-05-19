@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- COLOR PALETTE https://www.color-hex.com/color/c9a0dc -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+h1{
+text-align: center;
+font size: 50px;
+}
+
+h2{
+font size: 35px;
+}
+
+
+body{
+background-color:#b3dca0;
+ font-family: Arial;
+ font size: 30px;
+}
+
+h4{
+text-align: center;
+}
+
+.padded img {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+button {
+        background-color: #b3dca0;
+        color: black;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+
+	.getstarted {
+	    width: auto;
+        padding: 10px 18px;
+        margin: 10px 150px;
+		height: 50px;
+	}
+	.footbutton {
+	    width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+	}
+customIndent{
+  margin-left: 5em;
+}
+
+header {
+left: 0;
+padding: 0 4%;
+position: relative;
+width: auto;
+background:#c9a0dc;
+}
+
+footer {
+padding: 0 4%;
+position: relative;
+left:0;
+padding: 0 4%;
+width: auto;
+background:#c9a0dc;
+}
+
+#mainDiv{
+width: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 0 4%;
+position: relative;
+border: 5px outset;
+background-color:white;
+}
+
+</style>
+
+<title>Daytime Dates!</title>
+
+<link rel="icon" href="https://imgur.com/wZtsrKZ.png">
+
+</head>
+
+<body>
+<header>
+  <br>
+  <inline>
+  <a href="/.">
+         <img class="padded" alt="Bean And Stink main logo" src="https://imgur.com/wZtsrKZ.png"
+         width="184" height="113">
+  </a>
+  <a href="/.">
+         <img class="padded" alt="Bean And Stink text" src="https://imgur.com/idiZ0xb.png"
+         width="350" height="113">
+  </a>
+  </inline>
+
+</header>
+
+<div id="mainDiv">
+    <h1> MIATA SIMULATION 3000 </h1>
+
+	<h4>Toggle on and off duty using the button below!</h4>
+
+  <br>
+  <br>
+  <br>
+
+	<center>
+    <img class="padded" id="duty-status" alt="OFF DUTY" src="https://imgur.com/5ZoWtEY.png"
+    width="500" height="125"> <br>
+    <img class="padded" id="miata" alt="miata off png" src="https://imgur.com/7CoE8WZ.png"
+    width="1000" height="562">
+    <br>
+    <br>
+	  <button type="button" class="getstarted" onclick="toggleDuty()">TOGGLE DUTY <br> STATUS</button>
+
+	<script>
+    function toggleDuty() {
+        var Duty_ID = document.getElementById('duty-status');
+        var Miata_ID = document.getElementById('miata');
+
+        if (Duty_ID.alt.match("OFF DUTY")) { //if the "OFF DUTY" picture is present (i.e. you want OFF DUTY -> ON DUTY)
+            Duty_ID.src = "https://imgur.com/EeelUYa.png"; //change to "ON DUTY" pic
+            Duty_ID.alt = "ON DUTY";
+            Miata_ID.src = "https://imgur.com/lg2ZfvD.gif"; //swap for lights turning on gif
+            Miata_ID.alt = "miata on gif";
+        }
+        else { //if the "ON DUTY picture is present" (i.e. you want ON DUTY -> OFF DUTY)
+            Duty_ID.src = "https://imgur.com/5ZoWtEY.png"; //change to "OFF DUTY" pic
+            Duty_ID.alt = "OFF DUTY";
+            Miata_ID.src = "https://imgur.com/6Q5MBsO.gif"; //swap for lights turning off gif
+            Miata_ID.alt = "miata off gif";
+        }
+    }
+	</script>
+
+	</center>
+
+	<br>
+	<br>
+
+
+ <br>
+
+ <br>
+</div>
+
+<footer>
+<br>
+<inline>
+  <h2>An OrcPiss.com Production</h2>
+  <button type="button" class="footbutton" align="left" onclick="location.href = 'https://twitter.com/CanIDrinkUrPee';"> FAQ</button>
+  <button type="button" class="footbutton" align="left" onclick="location.href = 'https://twitter.com/CanIDrinkUrPee';"> Contact Us</button>
+  </inline>
+<br>
+</footer>
+
+</body>
+</html>
